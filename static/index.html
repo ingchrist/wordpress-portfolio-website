@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mint — Creative Digital Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <header id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo" aria-label="Mint Home">
+        <svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 30L10 4L19 22L28 4L36 30" stroke="#1e1e1e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 20H32" stroke="#FFE600" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#work" class="nav-link active">WORK</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#blog" class="nav-link">BLOG</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-tag">— WELCOME</p>
+        <h1 class="hero-heading">
+          Hello,<br />
+          We Are <span class="accent">Creative</span><br />
+          Digital Agency.
+        </h1>
+        <p class="hero-sub">
+          We craft bold digital experiences — from brand identity and illustration
+          to web design and development. Let's build something remarkable together.
+        </p>
+        <a href="#contact" class="btn btn-primary">SEND MESSAGE</a>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80"
+            alt="Modern architecture hero"
+            class="hero-img"
+          />
+          <div class="hero-badge">
+            <span class="badge-number">5+</span>
+            <span class="badge-text">Years of<br/>Excellence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL DOWN</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ WORK / PORTFOLIO ═══════════════════════ -->
+  <section id="work" class="work">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">WORK SHOWCASE.</h2>
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="branding">BRANDING</button>
+          <button class="filter-btn" data-filter="illustration">ILLUSTRATION</button>
+          <button class="filter-btn" data-filter="web">WEB</button>
+        </div>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="branding">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Branding project" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">BRANDING</span>
+              <h3>Nike Campaign</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item featured" data-category="web">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="Web project" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">WEB</span>
+              <h3>Tech Platform UI</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="illustration">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Illustration project" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">ILLUSTRATION</span>
+              <h3>Abstract Series</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="branding">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Branding project 2" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">BRANDING</span>
+              <h3>Interior Brand</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="web">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80" alt="Web project 2" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">WEB</span>
+              <h3>Agency Website</h3>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="illustration">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1576153192621-7a3be10b356e?w=600&q=80" alt="Illustration project 2" />
+            <div class="gallery-overlay">
+              <span class="gallery-cat">ILLUSTRATION</span>
+              <h3>Nature Study</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more-wrap">
+        <button class="btn btn-outline" id="loadMoreBtn">LOAD MORE</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ ABOUT ══════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-images">
+        <div class="about-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80"
+            alt="Team member"
+          />
+          <div class="persona-card">
+            <strong>Sarah Chen</strong>
+            <span>Creative Director</span>
+          </div>
+        </div>
+        <div class="about-img-secondary">
+          <img
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+            alt="Team member"
+          />
+          <div class="persona-card">
+            <strong>James Okafor</strong>
+            <span>Lead Developer</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">— ABOUT US</p>
+        <h2 class="section-title">We Create <span class="accent">Bold</span><br/>Digital Experiences.</h2>
+        <p class="about-desc">
+          We are a multidisciplinary creative studio specializing in branding, illustration,
+          and digital design. With over 5 years of experience, we partner with ambitious
+          brands to craft identities and digital products that leave a lasting impression.
+        </p>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">48</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">12</span>
+            <span class="stat-label">Awards Won</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">WORK WITH US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ BLOG ══════════════════════════════ -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">— LATEST POSTS</p>
+        <h2 class="section-title">Our Blog.</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Blog post" />
+            <span class="blog-cat">BRANDING</span>
+          </div>
+          <div class="blog-body">
+            <time>June 01, 2026</time>
+            <h3><a href="#blog">Creative Blog Post Title</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="#blog" class="read-more">READ MORE</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Blog post" />
+            <span class="blog-cat">ILLUSTRATION</span>
+          </div>
+          <div class="blog-body">
+            <time>May 20, 2026</time>
+            <h3><a href="#blog">Illustration Blog Post Title</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="#blog" class="read-more">READ MORE</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Blog post" />
+            <span class="blog-cat">WEB</span>
+          </div>
+          <div class="blog-body">
+            <time>May 08, 2026</time>
+            <h3><a href="#blog">Web Design Blog Post Title</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <a href="#blog" class="read-more">READ MORE</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════ CONTACT ═════════════════════════════ -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow">— GET IN TOUCH</p>
+        <h2 class="section-title">Contact Us.</h2>
+        <p class="contact-desc">
+          Have a project in mind? We'd love to hear from you. Send us a message
+          and we'll get back to you as soon as possible.
+        </p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@mint.agency">hello@mint.agency</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span>123 Creative St, New York, NY</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project inquiry" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">SEND MESSAGE</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg width="32" height="28" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 30L10 4L19 22L28 4L36 30" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 20H32" stroke="#FFE600" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Mint Agency</span>
+      </div>
+      <div class="footer-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Behance">BE</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Mint Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
