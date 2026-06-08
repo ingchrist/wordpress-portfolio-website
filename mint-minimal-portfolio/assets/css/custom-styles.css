@@ -1,0 +1,106 @@
+.banner-img {
+	object-fit: cover; 
+}
+
+.filtered-gallery #eael-filter-gallery-wrapper-987f9ef.eael-filter-gallery-wrapper .eael-filter-gallery-control {
+    justify-content: left !important;
+}
+.eael-filterable-gallery-loadmore {
+	margin-top: 20px;
+}
+
+.featured-img a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Keep image natural; optional slight dim for hover */
+.featured-img a img {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.aboutus-persona {
+    z-index: 1;
+}
+.aboutus-persona .elementor-image-box-content {
+    position: absolute;
+    bottom: 6px;
+    background: #ffe100;
+    width: 75%;
+    padding: 15px 20px;
+}
+
+.aboutus a {
+    background: #ffe600;
+    color: #1e1e1e;
+    padding: 5px;
+}
+
+.featured-img a:hover img {
+  filter: brightness(0.8); /* slightly dim the image */
+}
+
+/* Yellow overlay with opacity */
+.featured-img a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 230, 0, 0.7); /* #FFE600 + alpha */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* "Read More" text */
+.featured-img a::after {
+  content: "Read More";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* On hover — show overlay + text */
+.featured-img a:hover::before,
+.featured-img a:hover::after {
+  opacity: 1;
+}
+
+.footer-elements, .footer-elements a, .footer-container {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 12px;
+}
+.footer-elements a {
+  color: #FFE600;
+}
+
+.blogpage .elementor-post__read-more {
+  background: #FFE600;
+  padding: 10px 15px;
+}
+
+/* Make post pages full height */
+.single-post {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Ensure content fills the available space */
+.single-post main,
+.single-post .site-content,
+.single-post .elementor-section-wrap {
+  flex: 1;
+}
