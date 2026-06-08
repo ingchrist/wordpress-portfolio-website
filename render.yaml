@@ -1,0 +1,56 @@
+services:
+  # WordPress Web Service
+  - type: web
+    name: mint-portfolio-wordpress
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: WORDPRESS_DB_HOST
+        fromDatabase:
+          name: mint-portfolio-db
+          property: host
+      - key: WORDPRESS_DB_PORT
+        fromDatabase:
+          name: mint-portfolio-db
+          property: port
+      - key: WORDPRESS_DB_NAME
+        fromDatabase:
+          name: mint-portfolio-db
+          property: database
+      - key: WORDPRESS_DB_USER
+        fromDatabase:
+          name: mint-portfolio-db
+          property: user
+      - key: WORDPRESS_DB_PASSWORD
+        fromDatabase:
+          name: mint-portfolio-db
+          property: password
+      - key: WORDPRESS_TABLE_PREFIX
+        value: wp_
+      - key: WORDPRESS_DEBUG
+        value: "false"
+      # WordPress Security Keys — set these as secret env vars in Render dashboard
+      # Generate at: https://api.wordpress.org/secret-key/1.1/salt/
+      - key: WORDPRESS_AUTH_KEY
+        sync: false
+      - key: WORDPRESS_SECURE_AUTH_KEY
+        sync: false
+      - key: WORDPRESS_LOGGED_IN_KEY
+        sync: false
+      - key: WORDPRESS_NONCE_KEY
+        sync: false
+      - key: WORDPRESS_AUTH_SALT
+        sync: false
+      - key: WORDPRESS_SECURE_AUTH_SALT
+        sync: false
+      - key: WORDPRESS_LOGGED_IN_SALT
+        sync: false
+      - key: WORDPRESS_NONCE_SALT
+        sync: false
+
+databases:
+  - name: mint-portfolio-db
+    plan: starter
+    databaseName: wordpress
+    user: wordpress

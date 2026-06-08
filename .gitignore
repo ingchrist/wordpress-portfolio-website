@@ -1,0 +1,15 @@
+# WordPress uploads and cache (generated at runtime)
+wp-content/uploads/
+wp-content/cache/
+
+# Sensitive config (never commit real credentials)
+wp-config.php
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node (if any build tools are added later)
+node_modules/
